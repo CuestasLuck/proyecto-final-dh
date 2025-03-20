@@ -1,0 +1,139 @@
+.header {
+    background-color: #e4e4e4;
+    color: black;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem 1rem;
+    z-index: 100;
+}
+
+.profileAvatar{
+    color: white;
+    background-color: #3b81e2;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 50%
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+  
+.icon {
+    width: 4.5rem;
+    height: auto;
+    background-color: #193d6d;
+    border-radius: 8px;
+}
+  
+.text {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.button {
+    background-color: #f55a00;
+    color: #FAF8F3;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.button:hover {
+    background-color: #f6ecd8;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+  
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+  
+@media (max-width: 768px) {
+
+    .navLinks {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 70%;
+      background-color: #1f2937;
+      padding: 2rem;
+      gap: 1.5rem;
+      z-index: 99;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-self: flex-start;
+    }
+  
+
+    .navLinks.open {
+      display: flex;
+      transform: translateX(0);
+    }
+  
+
+    .hamburger {
+      display: block;
+    }
+  
+    .closeIcon {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .closeIcon {
+      display: none;
+    }
+}

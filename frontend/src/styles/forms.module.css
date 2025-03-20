@@ -1,0 +1,28 @@
+.form_conteinter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.form{
+    background-color: rgb(197, 197, 197);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.input{
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem;
+}
+.button{
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem;
+}

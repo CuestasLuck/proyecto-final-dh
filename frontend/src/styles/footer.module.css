@@ -1,0 +1,21 @@
+.footer{
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
+    
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.text{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.icon {
+    width: 2.5rem;
+    height: auto;
+}
